@@ -99,4 +99,57 @@ button{
     background-color: #363636;
     color: #ffffff;
     border: 1px solid #808080;
+    border-radius: 2.0rem;
+}
+
+
+
+input{
+    display: none;
+}
+
+
+nav{
+    position: absolute;
+    /*text-align: left;*/
+    width: 100%;
+    left: -100%;
+}
+
+label{
+    top: 0.1%;
+    padding: 3%;
+    position: absolute;
+    z-index: 2;
+}
+label img{
+    height: 2.5rem;
+    width: 3rem;
+}
+nav a{
+    font-family: Rampart One, "Sans-Serif";
+    text-align: center;
+    display: block;
+    color:white;
+    font-size: 4.0rem;
+    padding-top: 8.3vh;
+    padding-bottom: 8vh;
+    border-bottom: 1px solid black;
+    text-decoration-line: none;
+}
+
+ul{
+    /*width: 26rem;*/
+    position: absolute;
+    width: 100vw;
+    /*left: 7vh;*/
+    background: linear-gradient(40deg, rgba(128,128,128,1) 0%, rgba(28,28,28,1) 100%);
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(100%);
+}
+
+input[type="checkbox"]:checked + label {
+  background: ;
 }
